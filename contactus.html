@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eramen contactus page</title>
+     <!-- buat fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- swiper link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+<!-- hubungin css -->
+ <link rel="stylesheet" href="./contactus.css">
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="menu">
+        <a href="./homepage.html" class="menu_logo">
+            <img src="E-removebg-preview.png" alt="">
+        </a>
+        <div class="menu-bar">
+            <a href="./product.html">Our Product</a>
+            <a href="./promo.html">Promo</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="menu_extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="hamburger_menu"><i data-feather="menu"></i></a>
+        </div>
+        <div class="search_form">
+           <input type="search" name="" id="search-box" placeholder="write product name here...">
+            <label for="search-box"><i data-feather="search"></i></label> 
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- contact section start -->
+    <div class="container contact">
+        <h1 class="heading">Contact Us</h1>
+
+        <section>
+
+            <div class="row">
+
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.648460438001!2d106.78637198885495!3d-6.177790400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65fa6b016d7%3A0xb74206c358442088!2sIkkudo%20Ichi%20Central%20Park!5e0!3m2!1sid!2sid!4v1685909514635!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form class="form" method="post" onsubmit =" val()">
+                    <h3>Get In Touch</h3>
+                    <input type="text" id="name"  placeholder="Enter your name" class="box">
+                    <input type="email" id="email" placeholder="Enter your email" class="box">
+                    <input type="text" id="phone" onkeyup="angka(this);" placeholder="Enter your number" class="box">
+                    <select name="option" id="option" class="box">
+                        <option value="" class="option-box">choose preference</option>
+                        <option value="" class="option-box">Ramen</option>
+                        <option value="" class="option-box">Dry ramen</option>
+                    </select>
+                    <input type="checkbox" id="newslatter" >
+                    <button type="submit">submit</button>
+                </form>
+
+            </div>
+
+            <div class="grid">
+                <div class="box">
+                    <i class='bx bxs-phone'></i>
+                    <h3>Phone Number</h3>
+                    <a href="tel:1234567890">+123-456-789</a>
+                    <a href="tel:1112223333">+111-222-3333</a>
+                </div>
+                <div class="box">
+                    <i class='bx bx-envelope'></i>
+                    <h3>Email Address</h3>
+                    <a href="mailto:lululala@gmail.com">lululala@gmail.com</a>
+                    <a href="mailto:issabela@gmail.com">issabela@gmail.com</a>
+                </div>
+                <div class="box">
+                    <i class='bx bxs-buildings'></i>
+                    <h3>Office Address</h3>
+                    <a href="#">Jl. Kebon Jeruk Raya No. 27, Kebon Jeruk Jakarta Barat 11530, Indonesia</a>
+                </div>
+            </div>
+
+            <div class="credit">
+                &copy; copyright @ 2023 by <span>Mrs.Lulu Lala</span> |
+                alright reserved.
+            </div>
+
+        </section>
+
+    </div>
+    <!-- contact section end -->
+    <!-- section footer start-->
+    <section class="footer">
+        <div class="sosmed">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term Of Use</a>
+            <a href="#">Our Company</a>
+        </div>
+    </section>
+    <!-- section footer end-->
+    <script>
+        feather.replace()
+    </script>
+    <script src="js/contactus.js"></script>
+</body>
+</html>

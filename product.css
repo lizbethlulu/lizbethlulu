@@ -1,0 +1,712 @@
+:root {
+    --primary: rgb(187, 172, 172);
+    --bg: #fff;
+    --bg_2: black;
+    --fc: #a6a6b5;
+    --sc: #acbced;
+    --tc:  #82829d;
+    --text_c: #1f1d1d;
+    --box_s: 0 5px 25px rgb(2 2 2 0.1);
+    --text_s: 0 5px 25px rgb(2 2 2 0.1);
+    --light-bg: rgba(225,225,225,.1);
+    --light-white: rgba(225,225,225,.5)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linier;
+    text-transform: capitalize;
+}
+*::selection {
+    color: var(--bg);
+    background: var(--sc);
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'poppins',sans-serif;
+    background: url(./pngtree-campus-civilization-beige-chinese-style-canteen-paintings-civilization-dining-poster-picture-image_1061100.png);
+    background-blend-mode: multiply;
+    color: var(--bg_2);
+}
+/* navbar start */
+/* menu logo */
+.menu_logo img{
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+/* maenu  */
+.menu {
+    /* supaya sesuai kemauan */
+    display: flex;
+    /* sejajar horizontal */
+    justify-content: space-between;
+    /* sejajar vertical */
+    align-items: center;
+    /* ukurannya based on 16px dan biar responsive dikasih 7% */
+    padding: 0rem 7%;
+    background-color: rgb(44, 44, 45);
+    border-bottom: 2px solid #f9ebdd; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    /* box-shadow: 10px 10px 5px 12px black; */
+}
+
+.menu .menu-bar a {
+    color: var(--bg);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.menu .menu-bar a:hover {
+    color: var(--primary);
+}
+
+.menu .menu-bar a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(102, 102, 101);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.menu .menu-bar a:hover::after {
+    transform: scaleX(0.4);
+}
+
+.menu .menu_extra a {
+    color: var(--bg);
+    margin: 0 0.5rem;
+
+}
+
+.menu .menu_extra a:hover {
+    color: var(--primary);
+}
+
+#hamburger_menu {
+    display: none;
+}
+/* menu bar search */
+.menu .search_form {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: white;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.menu .search_form.active {
+    transform: scaleY(1);
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem var(--text_c);
+}
+
+.menu .search_form input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    color: var(--bg2);
+    padding: 1rem;
+}
+
+.menu .search_form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    color: var(--bg2);
+}
+/* navbar end */
+/* banner start */
+.welcome {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(23, 22, 23);
+}
+.welcome-text {
+    flex: 1 1 17rem;
+    margin-left: 100px;
+}
+.welcome-img {
+    flex: 1 1 15rem;
+}
+.welcome-img img {
+    animation: animate 2s linear infinite
+}
+@keyframes animate {
+    0%{
+        transform: translate(-11px, 0);
+    }
+    50%{
+        transform: translate(0, -11px);
+    }
+    100%{
+        transform: translate(-11px, 0);
+    }
+}
+.welcome-text span {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--bg);
+}
+.welcome-text h1 {
+    font-size: 4.2rem;
+    color: var(--sc);
+    font-weight: bolder;
+}
+.welcome-text h2 {
+    font-size: 1.8rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+    color: var(--bg);
+}
+/* banner end*/
+/* first content start */
+.box1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 3rem 2rem;
+}
+.box1 .tittle {
+    font-size: 3.5rem;
+    color: var(--text_c);
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box1 .food-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+}
+.box1 .food-box .food {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--tc);
+    box-shadow: 0 .5rem 1rem var(--text_c);
+    outline: .1rem solid var(--bg);
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+.box1 .food-box .food:hover {
+    outline: .2rem solid black;
+    outline-offset: 0;
+}
+.box1 .food-box .food img {
+    height: 18rem;
+}
+.box1 .food-box .food:hover img {
+    transform: scale(.8);
+}
+.box1 .food-box .food h3 {
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+.box1 .food-box .food:hover h3 {
+    color: var(--bg);
+}
+.box1 .food-box .food .price {
+    font-size: 2rem;
+    color: #444;
+}
+.food-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.food-popup .popup {
+    display: none;
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--bg);
+    position: relative;
+    margin: 2rem;
+    width: 28rem;
+}
+.food-popup .popup.active {
+    display: inline-block;
+}
+.food-popup .popup.active img {
+    height: 12rem;
+}
+.food-popup .popup .bx.bx-x {
+    position: absolute;
+    top: .5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 4rem;
+}
+.food-popup .popup .bx.bx-x:hover {
+    transform: rotate(406deg);
+    color: var(--sc);
+}
+.food-popup .popup h3 {
+    color: #444;
+    pad: .5rem 0;
+    font-size: 1.8rem;
+}
+.food-popup .popup .stars {
+    padding:.51rem 0;
+    font-size: 1.4rem;
+}
+.food-popup .popup .stars i {
+    color: rgb(217, 188, 41);
+}
+.food-popup .popup .stars span {
+    color: var(--tc);
+}
+.food-popup .popup p {
+    line-height: 1.3;
+    padding: .2 0;
+    font-size: 1.3rem;
+    color: black;
+}
+.food-popup .popup .price {
+    padding: .2 0;
+    font-size: 1.3rem;
+    color: rgb(21, 50, 83);
+}
+.food-popup .popup .btn {
+    margin-top: 1rem;
+}
+.food-popup .popup .btn a{
+    padding: .6rem;
+    font-size: 1rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+
+.food-popup .popup .btn a:hover {
+    color: var(--bg);
+    background-color: #1f1d1d;
+}
+/* first content end */
+/* second content start */
+.box2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 3rem 2rem;
+}
+.box2 .tittle {
+    font-size: 3.5rem;
+    color: var(--text_c);
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box2 .food-truck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+}
+.box2 .food-truck .ftruck {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgb(118, 93, 118);
+    box-shadow: 0 .5rem 1rem var(--text_c);
+    outline: .1rem solid var(--bg);
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+.box2 .food-truck .ftruck:hover {
+    outline: .2rem solid black;
+    outline-offset: 0;
+}
+.box2 .food-truck .ftruck img {
+    height: 18rem;
+}
+.box2 .food-truck .ftruck:hover img {
+    transform: scale(.8);
+}
+.box2 .food-truck .ftruck h3 {
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+.box2 .food-truck .ftruck:hover h3 {
+    color: var(--bg);
+}
+.box2 .food-truck .ftruck .price {
+    font-size: 2rem;
+    color: #444;
+}
+.ftruck-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.ftruck-popup .fpopup {
+    display: none;
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--bg);
+    position: relative;
+    margin: 2rem;
+    width: 28rem;
+}
+.ftruck-popup .fpopup.active {
+    display: inline-block;
+}
+.ftruck-popup .fpopup.active img {
+    height: 12rem;
+}
+.ftruck-popup .fpopup .bx.bx-x {
+    position: absolute;
+    top: .5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 4rem;
+}
+.ftruck-popup .fpopup .bx.bx-x:hover {
+    transform: rotate(406deg);
+    color: var(--sc);
+}
+.ftruck-popup .fpopup h3 {
+    color: #444;
+    pad: .5rem 0;
+    font-size: 1.8rem;
+}
+.ftruck-popup .fpopup .stars {
+    padding:.51rem 0;
+    font-size: 1.4rem;
+}
+.ftruck-popup .fpopup .stars i {
+    color: rgb(217, 188, 41);
+}
+.ftruck-popup .fpopup p {
+    line-height: 1.3;
+    padding: .2 0;
+    font-size: 1.3rem;
+    color: black;
+}
+.ftruck-popup .fpopup .price {
+    padding: .2 0;
+    font-size: 1.3rem;
+    color: rgb(21, 50, 83);
+}
+.ftruck-popup .fpopup .btn {
+    margin-top: 1rem;
+}
+.ftruck-popup .fpopup .btn a{
+    padding: .6rem;
+    font-size: 1rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+
+.ftruck-popup .fpopup .btn a:hover {
+    color: var(--bg);
+    background-color: #1f1d1d;
+}
+/* second content end*/
+/* third content start */
+.box3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 3rem 2rem;
+}
+.box3 .tittle {
+    font-size: 3.5rem;
+    color: var(--text_c);
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box3 .appetizer-truck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+}
+.box3 .appetizer-truck .atruck {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: wheat;
+    box-shadow: 0 .5rem 1rem var(--text_c);
+    outline: .1rem solid var(--bg);
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+.box3 .appetizer-truck .atruck:hover {
+    outline: .2rem solid black;
+    outline-offset: 0;
+}
+.box3 .appetizer-truck .atruck img {
+    height: 18rem;
+}
+.box3 .appetizer-truck .atruck:hover img {
+    transform: scale(.8);
+}
+.box3 .appetizer-truck .atruck h3 {
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+.box3 .appetizer-truck .atruck:hover h3 {
+    color: var(--bg);
+}
+.box3 .appetizer-truck .atruck .price {
+    font-size: 2rem;
+    color: #444;
+}
+.atruck-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.atruck-popup .apopup {
+    display: none;
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--bg);
+    position: relative;
+    margin: 2rem;
+    width: 28rem;
+}
+.atruck-popup .apopup.active {
+    display: inline-block;
+}
+.atruck-popup .apopup.active img {
+    height: 12rem;
+}
+.atruck-popup .apopup .bx.bx-x {
+    position: absolute;
+    top: .5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 4rem;
+}
+.atruck-popup .apopup .bx.bx-x:hover {
+    transform: rotate(406deg);
+    color: var(--sc);
+}
+.atruck-popup .apopup h3 {
+    color: #444;
+    pad: .5rem 0;
+    font-size: 1.8rem;
+}
+.atruck-popup .apopup .stars {
+    padding:.51rem 0;
+    font-size: 1.4rem;
+}
+.atruck-popup .apopup .stars i {
+    color: rgb(217, 188, 41);
+}
+.atruck-popup .apopup p {
+    line-height: 1.3;
+    padding: .2 0;
+    font-size: 1.3rem;
+    color: black;
+}
+.atruck-popup .apopup .price {
+    padding: .2 0;
+    font-size: 1.3rem;
+    color: rgb(21, 50, 83);
+}
+.atruck-popup .apopup .btn {
+    margin-top: 1rem;
+}
+.atruck-popup .apopup .btn a{
+    padding: .6rem;
+    font-size: 1rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+
+.atruck-popup .apopup .btn a:hover {
+    color: var(--bg);
+    background-color: #1f1d1d;
+}
+/* third content end*/
+.btn {
+    height: 2rem;
+    margin-top: 20px;
+}
+.btn button {
+    font-size: 1.2rem;
+    background-color: black;
+    color: var(--bg);
+    border-radius: .7rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.btn button:hover {
+    font-size: 1.8rem;
+    color: black;
+    background: var(--bg);
+    box-shadow: 0 .5rem 1rem var(--text_c);
+}
+/* footer start */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 150px;
+    background: #1f1d1d;
+    justify-content: center;
+}
+.sosmed a{
+    font-size: 27px;
+    margin: 0.5rem;
+}
+.sosmed a .bx {
+    padding: 5px;
+    border-radius: 50%;
+}
+.sosmed a .bx:hover{
+    background: rgb(250, 242, 242);
+    color: #1f1d1d;
+}
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    padding: 1rem;
+}
+.links a:hover {
+    color: var(--sc);
+}
+.footer p {
+    margin-top: 5px;
+    text-align: center;
+    color: #fff;
+}
+.footer p:hover {
+    color: var(--sc);
+}
+/* footer end */
+/* media queries */
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 70%;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    #hamburger_menu {
+        display: inline-block;
+    }
+    .menu .menu-bar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgb(99, 76, 76);
+        width: 30rem;
+        height: 100vh;
+    }
+    .menu .menu-bar.active {
+        right: 0;
+    }
+    .menu .menu-bar a{
+        color: rgb(253, 228, 178);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .menu .menu-bar a:hover {
+        color: white;
+    }
+    .menu .menu-bar a::after {
+        border-bottom-left-radius: 2rem solid white;
+        transform-origin: 0 0;
+    }
+    .menu .menu-bar a:hover:after {
+        transform: scaleX(0.3);
+    }
+    .menu .search_form {
+        width: 90%;
+        right: 2rem;
+    }
+    .welcome img {
+        width: 300px;
+        height: 300px;
+    }
+    .welcome text h1 {
+        font-size: 2.4rem;
+    }
+    .welcome-text h2 {
+        font-size: 1.2rem;
+    }
+    .welcome-text {
+        padding-top: inherit;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .food-popup .popup.active img {
+        height: 5rem;
+    }
+    .ftruck-popup .fpopup.active img {
+        height: 5rem;
+    }
+}
+/* hp */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .box1 .food-box .food img {
+        height: 10rem;
+    }
+}

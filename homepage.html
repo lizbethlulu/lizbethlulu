@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eramen homepage</title>
+
+    <!-- buat fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- hubungin css -->
+ <link rel="stylesheet" href="./homepage.css">
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="menu">
+        <a href="" class="menu_logo">
+            <img src="E-removebg-preview.png" alt="">
+        </a>
+        <div class="menu-bar">
+            <a href="./product.html">Our Product</a>
+            <a href="./promo.html">Promo</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./contactus.html">Contact Us</a>
+        </div>
+        <div class="menu_extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="hamburger_menu"><i data-feather="menu"></i></a>
+        </div>
+        <div class="search_form">
+           <input type="search" name="" id="search-box" placeholder="write product name here...">
+            <label for="search-box"><i data-feather="search"></i></label> 
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- promotion bar start -->
+    <section class="img-slider">
+        <div class="slider">
+            <div class="slides">
+                <!-- button start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- button end -->
+                <!-- image start -->
+                <div class="slide first">
+                    <img src="slider_image/picture_1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="slider_image/picture_2.png" alt="">
+                </div>
+                <div class="slide">
+                        <img src="slider_image/picture_3.jpeg" alt="">
+                </div> 
+                <!-- image end -->
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!-- automatic navigation end -->
+            </div>
+            <!-- manual navigation start -->
+             <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div> 
+            <!-- manual navigation end -->
+        </div>
+    </section>
+    <!-- promotion bar end -->
+    <!-- section text -->
+    <div class="heading">
+        <span>delicious ramen</span>
+        <h1>Buy Now!!!</h1>
+    </div>
+    <!-- best new product view start -->
+    <section class="main-box">
+        <div class="text1">
+            <h1>NEW PRODUCT!!!</h1>
+        </div>
+        <div id="content-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="new product/np_1.png" alt="">
+                </div>
+                <h2>Tonkatsu Ramen</h2>
+                <span>50k</span>
+                <a href=""class="btn">Order Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="new product/np_2.png" alt="">
+                </div>
+                <h2>Gyukaku Ramen</h2>
+                <span>55k</span>
+                <a href=""class="btn">Order Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="new product/np_3.png" alt="">
+                </div>
+                <h2>Kintan Ramen</h2>
+                <span>53k</span>
+                <a href=""class="btn">Order Now</a>
+            </div>
+        </div>
+        <section class="welcome">
+            <div class="welcome-text">
+                <span>welcome to</span>
+                <h1>Eramen!!</h1>
+                <h2>one slurp <br> and get addicted</h2>
+                <a href="./contactus.html"  class="btn">Contact Us</a>
+            </div>
+            <div class="welcome-img">
+                <img src="./ramen2-removebg-preview.png" alt="">
+            </div>
+        </section>
+        <div class="text2">
+            <h1>BEST PRODUCT!!!</h1>
+        </div>
+        <div id="best-container">
+            <div class="bestbox">
+                <div class="b_box-img">
+                    <img src="best product/bp_1-removebg-preview.png" alt="">
+                </div>
+                <h2>tan-tan ramen</h2>
+                <span>53k</span>
+                <a href=""class="b-btn">Order Now</a>
+            </div>
+            <div class="bestbox">
+                <div class="b_box-img">
+                    <img src="best product/bp_2-removebg-preview.png" alt="">
+                </div>
+                <h2>Grilled beef ramen</h2>
+                <span>58k</span>
+                <a href=""class="b-btn">Order Now</a>
+            </div>
+            <div class="bestbox">
+                <div class="b_box-img">
+                    <img src="best product/bp_3-removebg-preview.png" alt="">
+                </div>
+                <h2>curry ramen</h2>
+                <span>55k</span>
+                <a href=""class="b-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- best new product view end -->
+    <div class="hbtn">
+        <a href="#"><button>Go Up!</button></a>
+    </div>
+    <!-- section footer start-->
+    <section class="footer">
+        <div class="sosmed">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term Of Use</a>
+            <a href="#">Our Company</a>
+        </div>
+        <p>&#169; CarpoolVenom All Right Reserved.</p>
+    </section>
+    <!-- section footer end-->
+    <script>
+        feather.replace()
+    </script>
+    <script src="js/homepage.js"></script>
+</body>
+</html>

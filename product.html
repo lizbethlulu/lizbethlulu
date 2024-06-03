@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eramen menu page</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- hubungin css -->
+    <link rel="stylesheet" href="./product.css">
+</head>
+<body>
+    <!-- nav start -->
+    <section>
+        <nav class="menu">
+            <a href="./homepage.html" class="menu_logo">
+                <img src="E-removebg-preview.png" alt="">
+            </a>
+            <div class="menu-bar">
+                <a href="#">Our Product</a>
+                <a href="./promo.html">Promo</a>
+                <a href="./aboutus.html">About Us</a>
+                <a href="./contactus.html">Contact Us</a>
+            </div>
+            <div class="menu_extra">
+                <a href="#" id="search-button"><i data-feather="search"></i></a>
+                <a href="#" id="hamburger_menu"><i data-feather="menu"></i></a>
+            </div>
+            <div class="search_form">
+               <input type="search" name="" id="search-box" placeholder="write product name here...">
+                <label for="search-box"><i data-feather="search"></i></label> 
+            </div>
+        </nav>
+        <!-- nav end -->
+    </section>
+    <!-- banner start -->
+    <section class="welcome">
+        <div class="welcome-text">
+            <span>Food made with</span>
+            <h1>Love</h1>
+            <h2>Make your day with<br> another Eramen!</h2>
+        </div>
+        <div class="welcome-img">
+            <img src="./Drawn_love_hearts.svg-removebg-preview.png" alt="">
+        </div>
+    </section>
+    <!-- banner end -->
+<!-- first content start -->
+<!-- main container start -->
+        <div class="box1">
+            <h3 class="tittle"> Main Dishes</h3>
+                <div class="food-box">
+                    <div class="food" data-name="p1">
+                        <img src="new product/np_1.png" alt="">
+                        <h3>Tonkatsu Ramen</h3>
+                        <div class="price">50K</div>
+                    </div>
+                    <div class="food" data-name="p2">
+                        <img src="new product/np_2.png" alt="">
+                        <h3>Gyukaku Ramen</h3>
+                        <div class="price">55K</div>
+                    </div>
+                    <div class="food" data-name="p3">
+                        <img src="new product/np_3.png" alt="">
+                        <h3>Kintan Ramen</h3>
+                        <div class="price">53K</div>
+                    </div>
+                    <div class="food" data-name="p4">
+                        <img src="best product/bp_1-removebg-preview.png" alt="">
+                        <h3>Tan-Tan Ramen</h3>
+                        <div class="price">53K</div>
+                    </div>
+                    <div class="food" data-name="p5">
+                        <img src="best product/bp_2-removebg-preview.png" alt="">
+                        <h3>Grilled Beef Ramen</h3>
+                        <div class="price">58K</div>
+                    </div>
+                    <div class="food" data-name="p6">
+                        <img src="best product/bp_3-removebg-preview.png" alt="">
+                        <h3>Curry Ramen</h3>
+                        <div class="price">55K</div>
+                    </div>
+                </div>
+        </div>
+        <!-- main container end -->
+    <!-- pop up start -->
+    <div class="food-popup">
+        <div class="popup" data-target="p1">
+            <i class='bx bx-x'></i>
+            <img src="new product/np_1.png" alt="">
+            <h3>Tonkatsu Ramen</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+                <i class='bx bx-star'></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Creamy noodle with half baked grilled
+                pork and egg.Mixed with some health 
+                toppings like sweet corn,mold and seewed.
+            </p>
+            <div class="price">50K</div>
+            <div class="btn">
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+        <div class="popup " data-target="p2">
+            <i class='bx bx-x'></i>
+            <img src="new product/np_2.png" alt="">
+            <h3>Gyukaku Ramen</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Creamy fu mie with full baked pork grilled
+                pork slice.Combined with a little salad. 
+                And soft boiled eggs as the main topping.
+            </p>
+            <div class="price">55K</div>
+            <div class="btn">
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+        <div class="popup" data-target="p3">
+            <i class='bx bx-x'></i>
+            <img src="new product/np_3.png" alt="">
+            <h3>Kintan Ramen</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+                <span>( 250 )</span>
+            </div>
+            <p> super spicy ramen and combined with well-done roast pork.
+                Accompanied by healthy toppings such as spring onions, 
+                half-boiled eggs, and naruto toppings.
+            </p>
+            <div class="price">53K</div>
+            <div class="btn">
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+        <div class="popup" data-target="p4">
+            <i class='bx bx-x'></i>
+            <img src="best product/bp_1-removebg-preview.png" alt="">
+            <h3>Tan-Tan Ramen</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+                <span>( 250 )</span>
+            </div>
+            <p> special soyu ramen dominated by meat.
+                Such as roast pork,sausages.
+                Then accompanied by tantalizing toppings, 
+                such as seaweed and half-boiled eggs.
+            </p>
+            <div class="price">53K</div>
+            <div class="btn">
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+        <div class="popup" data-target="p5">
+            <i class='bx bx-x'></i>
+            <img src="best product/bp_2-removebg-preview.png" alt="">
+            <h3>Grilled Beef Ramen</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <span>( 250 )</span>
+            </div>
+            <p> Ramen with a special sauce blend of soyu,black pepper, 
+                and onions.Then combined with cooked steamed pork, 
+                seaweed and half-boiled eggs.
+            </p>
+            <div class="price">58K</div>
+            <div class="btn">
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+        <div class="popup" data-target="p6">
+            <i class='bx bx-x'></i>
+            <img src="best product/bp_3-removebg-preview.png" alt="">
+            <h3>Curry Ramen</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+                <span>( 250 )</span>
+            </div>
+            <p> ramen with a blend of chili powder and a typical Indian curry.
+                Accompanied by roast pork,it becomes a delicious curry ramen.
+            </p>
+            <div class="price">58K</div>
+            <div class="btn">
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- pop up end -->
+    <!-- second content start -->
+<!-- main container start -->
+<div class="box2">
+    <h3 class="tittle"> Another Dishes</h3>
+        <div class="food-truck">
+            <div class="ftruck" data-name="pic1">
+                <img src="a-dishes/gorengan1-removebg-preview.png" alt="">
+                <h3>Gyoza</h3>
+                <div class="price">35K</div>
+            </div>
+            <div class="ftruck" data-name="pic2">
+                <img src="a-dishes/japchae_9ae0dd28cb-removebg-preview.png" alt="">
+                <h3>Japchae</h3>
+                <div class="price">30K</div>
+            </div>
+            <div class="ftruck" data-name="pic3">
+                <img src="a-dishes/613812d19a190-removebg-preview.png" alt="">
+                <h3>Takoyaki</h3>
+                <div class="price">33K</div>
+            </div>
+            <div class="ftruck" data-name="pic4">
+                <img src="a-dishes/641bd093f3096-removebg-preview.png" alt="">
+                <h3>mixed fruit ice</h3>
+                <div class="price">38K</div>
+            </div>
+            <div class="ftruck" data-name="pic5">
+                <img src="a-dishes/photo-removebg-preview.png" alt="">
+                <h3>Menantea</h3>
+                <div class="price">25K</div>
+            </div>
+            <div class="ftruck" data-name="pic6">
+                <img src="a-dishes/tropical-smoothie-recipe-5-removebg-preview.png" alt="">
+                <h3>Banana Smoothies</h3>
+                <div class="price">35K</div>
+            </div>
+        </div>
+</div>
+<!-- main container end -->
+<!-- pop up start -->
+<div class="ftruck-popup">
+<div class="fpopup" data-target="pic1">
+    <i class='bx bx-x'></i>
+    <img src="a-dishes/gorengan1-removebg-preview.png" alt="">
+    <h3>Gyoza</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+        <span>( 250 )</span>
+    </div>
+    <p>beef seasoned with various flavors. 
+        then steamed with wonton skin.
+    </p>
+    <div class="price">35K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="fpopup" data-target="pic2">
+    <i class='bx bx-x'></i>
+    <img src="a-dishes/japchae_9ae0dd28cb-removebg-preview.png" alt="">
+    <h3>Japchae</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <span>( 250 )</span>
+    </div>
+    <p>vermicelli which is mixed with Korean spices 
+        and mixed with various vegetables.
+    </p>
+    <div class="price">30K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="fpopup" data-target="pic3">
+    <i class='bx bx-x'></i>
+    <img src="a-dishes/613812d19a190-removebg-preview.png" alt="">
+    <h3>Takoyaki</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+        <i class='bx bx-star'></i>
+        <span>( 250 )</span>
+    </div>
+    <p> dough filled with octopus, sausage, and cheese toppings.
+        Accompanied by typical Japanese toppings on top.
+    </p>
+    <div class="price">33K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="fpopup" data-target="pic4">
+    <i class='bx bx-x'></i>
+    <img src="a-dishes/641bd093f3096-removebg-preview.png" alt="">
+    <h3>Mixed Fruit Ice</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+        <span>( 250 )</span>
+    </div>
+    <p> a blend of grated ice,various fruit,syrup 
+        and sweetened condensed milk.
+    </p>
+    <div class="price">38K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="fpopup" data-target="pic5">
+    <i class='bx bx-x'></i>
+    <img src="a-dishes/photo-removebg-preview.png" alt="">
+    <h3>Menantea</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bx-star'></i>
+        <span>( 250 )</span>
+    </div>
+    <p> tea combined with ice,lemon,and sugar.
+    </p>
+    <div class="price">25K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="fpopup" data-target="pic6">
+    <i class='bx bx-x'></i>
+    <img src="a-dishes/tropical-smoothie-recipe-5-removebg-preview.png" alt="">
+    <h3>Banana Smoothies</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+        <span>( 250 )</span>
+    </div>
+    <p> bananas that have been blended and combined with milk and sugar.
+    </p>
+    <div class="price">35K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+</div>
+<!-- pop up end -->
+<!-- second content end -->
+<!-- third content start -->
+<!-- main container start -->
+<div class="box3">
+    <h3 class="tittle"> Appetizer</h3>
+        <div class="appetizer-truck">
+            <div class="atruck" data-name="picture1">
+                <img src="appetizer/tempura1-removebg-preview.png" alt="">
+                <h3>Sukiyaki Tempura</h3>
+                <div class="price">35K</div>
+            </div>
+            <div class="atruck" data-name="picture2">
+                <img src="appetizer/tempura2-removebg-preview.png" alt="">
+                <h3>Taufan Tempura</h3>
+                <div class="price">30K</div>
+            </div>
+            <div class="atruck" data-name="picture3">
+                <img src="appetizer/tempura3-removebg-preview.png" alt="">
+                <h3>Maxmix Tempura</h3>
+                <div class="price">33K</div>
+            </div>
+            <div class="atruck" data-name="picture4">
+                <img src="appetizer/syshi1-removebg-preview.png" alt="">
+                <h3>Eroyaki York</h3>
+                <div class="price">38K</div>
+            </div>
+            <div class="atruck" data-name="picture5">
+                <img src="appetizer/sushi2-removebg-preview.png" alt="">
+                <h3>Salmon Roll</h3>
+                <div class="price">25K</div>
+            </div>
+            <div class="atruck" data-name="picture6">
+                <img src="appetizer/sushi3-removebg-preview.png" alt="">
+                <h3>Dynamite Roll</h3>
+                <div class="price">35K</div>
+            </div>
+        </div>
+</div>
+<!-- main container end -->
+<!-- pop up start -->
+<div class="atruck-popup">
+<div class="apopup" data-target="picture1">
+    <i class='bx bx-x'></i>
+    <img src="appetizer/tempura1-removebg-preview.png" alt="">
+    <h3>Sukiyaki Tempura</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+        <span>( 250 )</span>
+    </div>
+    <p>Japanese original shrimp mixed with healthy vegetables.
+    </p>
+    <div class="price">35K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="apopup" data-target="picture2">
+    <i class='bx bx-x'></i>
+    <img src="appetizer/tempura2-removebg-preview.png" alt="">
+    <h3>Taufan Tempura</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <span>( 250 )</span>
+    </div>
+    <p>Chinese original shrimp mixed with healthy vegetables.
+    </p>
+    <div class="price">30K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="apopup" data-target="picture3">
+    <i class='bx bx-x'></i>
+    <img src="appetizer/tempura3-removebg-preview.png" alt="">
+    <h3>Maxmix Tempura</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+        <i class='bx bx-star'></i>
+        <span>( 250 )</span>
+    </div>
+    <p> Indonesian original shrimp mixed with healthy vegetables.
+    </p>
+    <div class="price">33K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="apopup" data-target="picture4">
+    <i class='bx bx-x'></i>
+    <img src="appetizer/syshi1-removebg-preview.png" alt="">
+    <h3>Eroyaki York</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+        <span>( 250 )</span>
+    </div>
+    <p> mixed raw sushi variant in eramen
+    </p>
+    <div class="price">38K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="apopup" data-target="picture5">
+    <i class='bx bx-x'></i>
+    <img src="appetizer/sushi2-removebg-preview.png" alt="">
+    <h3>Salmon Roll</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bx-star'></i>
+        <span>( 250 )</span>
+    </div>
+    <p> Fresh salmon wrapped in rice
+    </p>
+    <div class="price">25K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+<div class="apopup" data-target="picture6">
+    <i class='bx bx-x'></i>
+    <img src="appetizer/sushi3-removebg-preview.png" alt="">
+    <h3>Dynamite Roll</h3>
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+        <span>( 250 )</span>
+    </div>
+    <p> Mixed of spicy sushi variant in eramen
+    </p>
+    <div class="price">35K</div>
+    <div class="btn">
+        <a href="#">Order Now</a>
+    </div>
+</div>
+</div>
+<!-- pop up end -->
+<!-- third content end -->
+<div class="btn">
+    <a href="#"><button>Go Up!</button></a>
+</div>
+    <!-- section footer start--> 
+      <section class="footer">
+        <div class="sosmed">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term Of Use</a>
+            <a href="#">Our Company</a>
+        </div>
+        <p>&#169; CarpoolVenom All Right Reserved.</p>
+    </section> 
+    <!-- section footer end -->
+    <script>
+        feather.replace()
+    </script>
+    <script src="js/product.js"></script>
+</body>
+</html>
